@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
     background-color: rgb(192, 192, 192);
 }
 /*header*/
@@ -21,14 +22,75 @@
     height: 100%;
     margin: 0 10% 0 10%;
 }
-.content-top-bar-l{
-    height: 100px;
-    width: 35%;
+.top-bar-section div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 30px;
 }
-.content-top-bar-r{
-    height: 100px;
-    width: 35%;
+.top-bar-section a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 0 40px 0;
 }
+a:hover{
+    padding-bottom: 42px;
+    border-bottom: 2px solid green;
+    height: 40px;
+}
+header .inizia{
+    padding: 10px 15px 10px 15px;
+    color: white;
+    background-color: #0061FF;
+    border-radius: 2px;
+}
+.top-bar-section-l{
+    float: left;
+    height: 100%;
+    margin: 0 0 0 15px;
+    padding: 20px;
+}
+.top-bar-section-c{
+    display: inline-block;
+    height: 100%;
+    margin: 0 15px 0 0;
+    padding: 20px;
+}
+.top-bar-section-r{
+    float: right;
+    height: 100%;
+    text-align: right;
+    margin: 0 15px 0 15px;
+    padding: 20px;
+}
+
+.top-box{
+    background-color: #B4D0E7;
+}
+
+.header-text-box{
+    margin-top: 50px;
+    display: inline-block;
+    width: 35%;
+    height: 300px;
+}
+.header-image-box{
+    margin-top: 50px;
+    display: inline-block;
+    width: 60%;
+    height: 300px;
+}
+
+
+.content-top h1{
+    font-size: 92px;
+    display: inline-block;
+}
+.content-top h2{
+    font-size: 20px;
+    display: inline-block;
+}
+
+
 /*fine header*/
 
 
