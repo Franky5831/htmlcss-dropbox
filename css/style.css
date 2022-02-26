@@ -105,8 +105,8 @@ header .inizia{
 .debugm{
     border: 1px solid green;
 }
-.container-main{
-    height: 3000px;
+main{
+    height: 3500px;
     width: 80%;
     margin: 150px 10% 0 10%;
 }
@@ -129,7 +129,6 @@ header .inizia{
 
 .blocchi-piani{
     display: inline-block;
-    height: 700px;
     width: 350px;
 }
 .blocchi-piani h1{
@@ -224,23 +223,23 @@ header .inizia{
 
 
 .box-operazioni{
+    margin-top: 150px;
     width: 100%;
+    height: 2000px;
+    background-color: #B4D0E7;
 }
 .box-operazioni h2{
-    margin: 100px 0 20px 0;
+    margin: 10px 0 20px 0;
 }
 .operazioni-riga1{
     width: 100%;
-    height: 600px;
 }
 .operazioni-riga2{
     width: 100%;
-    height: 600px;
 }
 .operazioni{
     width: 350px;
     height: 100%;
-    background-color: magenta;
 }
 .operazioni1, .operazioni2, .operazioni4, .operazioni5{
     display: inline-block;
@@ -255,14 +254,15 @@ header .inizia{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
+.ckt{
+    margin-top: 150px;
+    width: 100%;
+    height: 200px;
+}
+.ckt h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -275,3 +275,59 @@ header .inizia{
 
 
 /*fine main*/
+
+
+
+/*footer*/
+/*.debugf{
+    border: 1px solid yellow;
+}*/
+footer{
+    width: 100%;
+    height: 2000px;
+    background-color: #0061FF;
+}
+
+.designit-box{
+    width: 100%;
+    height: 500px;
+    
+}
+.mediabox{
+    display: inline-block;
+    width: 500px;
+    height: 100%;
+}
+.mediabox1{
+    display: inline-block;
+}
+.designit{
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 1000px - 100px);
+    overflow: auto;
+    padding: 35px;
+}
+.mediabox2{
+    float: right;
+}
+.mediabox img{
+    display: inline-block;
+    width: 247px;
+    height: 247px;
+    padding: 40px;
+    background-color: red;
+}
+
+.designit img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.designit hr{
+    width: 40px;
+    color: #000000;
+}
+.designit h3{
+    margin-top: 50px;
+}
+/*fine footer*/
