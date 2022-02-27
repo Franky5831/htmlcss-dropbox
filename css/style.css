@@ -26,6 +26,9 @@ body{
     z-index: 200;
     background-color: white;
 }
+.top-bar-container{
+    min-width: 1200px;
+}
 .top-box{
     width: 100%;
     height: 700px;
