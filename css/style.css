@@ -4,8 +4,10 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
-    background-color: rgb(192, 192, 192);
     min-width: 1325px;
 }
 .bbutton{
@@ -15,7 +17,7 @@ body{
 }
 /*header*/
 .debugh{
-    border: 1px solid red;
+    border: 1px transparent red;
 }
 .top-bar{
     width: 100%;
@@ -35,16 +37,17 @@ body{
     vertical-align: middle;
     margin-left: 30px;
 }
+
 .top-bar-section a{
     text-decoration: none;
     color: black;
     padding: 20px 0 40px 0;
 }
-/*a:hover{
-    padding-bottom: 42px;
+.top-bar-section a:not(.inizia):hover{
+    padding-bottom: 36px;
     border-bottom: 2px solid green;
-    height: 40px;
-}*/
+    height: 38px;
+}
 header .inizia{
     padding: 10px 15px 10px 15px;
     color: white;
@@ -79,6 +82,9 @@ header .inizia{
     width: 35%;
     height: 300px;
 }
+.header-text-box div{
+    margin: 30px 0 20px 0;
+}
 .header-image-box{
     float: right;
     margin-top: 50px;
@@ -96,19 +102,21 @@ header .inizia{
     font-size: 20px;
     display: inline-block;
 }
-
+.content-top i{
+    color: black;
+    font-size: 30px;
+}
 
 /*fine header*/
 
 
 /*main*/
 .debugm{
-    border: 1px solid green;
+    border: 1px transparent green;
 }
 main{
-    height: 3500px;
-    width: 80%;
-    margin: 150px 10% 0 10%;
+    height: 3900px;
+    margin: 250px 10% 0 10%;
 }
 
 .container-main h1{
@@ -119,38 +127,72 @@ main{
 .piani-main{
     margin-top: 50px;
     width: 100%;
-    height: 100px;
+    height: 700px;
 }
 .fatturazione-main div{
     display: inline-block;
     margin-right: 25px;
+}
+.fatturazione-main input{
+    margin: 0 0 40px 0;
+}
+.fatturazione-main li{
+    list-style-type: none;
+}
+.fatturazione-main li i{
+    color: blue;
 }
 
 
 .blocchi-piani{
     display: inline-block;
     width: 350px;
+    border: 1px solid #F1F1F1;
 }
 .blocchi-piani h1{
     font-size: 23px;
     margin-bottom: 20px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.blocchi-piani h1 i{
+    font-size: 20px;
 }
 .blocchi-piani h2{
     font-weight: bolder;
+    margin-bottom: 12px;
 }
 .blocchi-piani h3{
-    font-size: 14px;
+    font-weight: bolder;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.blocchi-piani h4{
+    color: rgb(71, 71, 71);
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+.blocchi-piani h5{
+    font-size: 12px;
+    margin-bottom: 16px;
 }
 .blocchi-piani h2, .blocchi-piani h3, .blocchi-piani h4, .blocchi-piani h5, .blocchi-piani div, .blocchi-piani ul{
     padding-left: 20px;
 }
 .blocchi-piani ul{
     padding-left: 40px;
+    margin-bottom: 120px;
 }
 .blocchi-piani li{
     margin-top: 15px;
 }
-
+.blocchi-piani div{
+    margin: 30px 0 20px 0;
+}
+.blocchi-piani hr{
+    border-right: 20px;
+    width: 40px;
+    color: lightgray;
+}
 
 
 .blocchi-piani1{
@@ -166,21 +208,34 @@ main{
 
 .blocco-enterprise{
     margin-top: 200px;
+    margin-bottom: 20px;
     width: 100%;
-    height: 200px;
+    height: 240px;
+    border: 1px solid #F1F1F1;
+}
+.blocco-enterprise h1{
+    font-size: 23px;
+    border-bottom: 1px solid #F1F1F1;
 }
 .blocco-enterprise div{
-    top: -130px;
+    top: -115px;
     position: relative;
     float: right;
 }
 .blocco-enterprise h2, .blocco-enterprise h3, .blocco-enterprise h5{
     padding: 0 0 20px 20px;
 }
+.blocco-enterprise h5{
+    padding-bottom: 0;
+}
+.blocco-enterprise h2{
+    margin-top: 20px;
+}
+
 
 
 .partner-box div{
-    margin: 0;
+    margin: 150px 0 0 0;
     padding: 0;
 }
 .partner-box{
@@ -226,13 +281,13 @@ main{
     margin-top: 150px;
     width: 100%;
     height: 2000px;
-    background-color: #B4D0E7;
 }
 .box-operazioni h2{
     margin: 10px 0 20px 0;
 }
 .operazioni-riga1{
     width: 100%;
+    margin-bottom: 30px;
 }
 .operazioni-riga2{
     width: 100%;
@@ -263,6 +318,9 @@ main{
     font-size: 50px;
     margin-bottom: 30px;
 }
+.ckt a{
+    color: blue;
+}
 
 
 
@@ -281,54 +339,174 @@ main{
 /*footer*/
 /**/
 .debugf{
-    background-color: rgba(0, 255, 255, 0.2);
+    background-color: transparent;
 }
 footer{
     width: 100%;
-    height: 2000px;
-    background-color: #0061FF;
 }
 
-.designit-box{
+.designit-container{
     width: 100%;
+}
+
+
+.designit-container1{
     height: 500px;
-    
+    width: 100%;
 }
-.mediabox{
-    display: inline-block;
+.designit-container2{
+    height: 300px;
+    width: 100%;
+    background-color: #B4D0E7;
+    padding: 100px 250px 0 250px;
+}
+
+
+
+.box-logo{
     width: 500px;
-    height: 100%;
-}
-.mediabox1{
-    display: inline-block;
-}
-.designit{
-    display: inline-block;
-    height: 100%;
-    width: calc(100% - 1000px - 100px);
-    overflow: auto;
-    padding: 35px;
-}
-.mediabox2{
-    float: right;
-}
-.mediabox img{
-    display: inline-block;
-    width: 247px;
-    height: 247px;
-    padding: 40px;
+    height: 500px;
     background-color: red;
 }
+.box-logo1{
+    float: left;
+}
+.box-logo2{
+    float: right;
+}
+.designit-text{
+    height: 500px;
+    width: calc(100% - 1000px);
+    display: inline-block;
+    padding: 40px;
+    margin: 0;
+    border: 0;
+    background-color: #F5F5F5;
+    overflow: auto;
+}
+.box-logo div{
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    margin-right: -4.5px;
+    margin-bottom: -5px;
+}
+.logo1{
+    background-color: #A2D39B;
+}
+.logo2{
+    background-color: #61082B;
+}
+.logo3{
+    background-color: #0093CE;
+}
+.logo4{
+    background-color: #FF1C1C;
+}
+.logo5{
+    background-color: #D5001F;
+}
+.logo6{
+    background-color: #B4D0E7;
+}
+.logo7{
+    background-color: #0D2481;
+}
+.logo8{
+    background-color: #FFD830;
+}
 
-.designit img{
+
+
+.box-logo img{
+    width: 70%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.designit-text  img{
     width: 150px;
+}
+.designit-text hr{
+    margin: 20px 0 30px 0;
+    width: 40px;
+}
+.designit-container2 div{
+    float: right;
+    position: relative;
+    bottom: 60px;
+}
+.designit-container2 h2{
+    font-size: 40px;
+    color: #61082B;
+}
+
+
+
+
+
+
+.faq{
+    width: 70%;
+    margin: 100px 15% 150px 15%;
+}
+.faq hr{
+    margin: 30px 0 30px 0;
+}
+.faq h3{
+    display: inline-block;
+}
+.faq h4{
+    float: right;
+    margin-right:40px ;
+}
+.faq:last-child{
+    margin-bottom: 250px;
+}
+
+
+.black-footer{
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    color: white;
+    padding-top: 120px;
+}
+
+.black-footer div{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin-left: calc((100% - 1200px)/5);
+}
+.opzioni-black-footer h2{
     margin-bottom: 20px;
 }
-.designit hr{
-    width: 40px;
-    color: #000000;
+.opzioni-black-footer li{
+    list-style-type: none;
+    margin: 4px 0 4px 0;
 }
-.designit h3{
-    margin-top: 50px;
+.opzioni-black-footer a{
+    text-decoration: none;
+    color: white;
 }
+.italiano{
+    margin-left: calc((100% - 1200px)/5);
+}
+.italiano hr{
+    width: 130px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
 /*fine footer*/
