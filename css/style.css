@@ -53,7 +53,7 @@ body{
     color: black;
     padding: 20px 0 40px 0;
 }
-.top-bar-section a:not(.inizia):not(#supporto):not(#logo-home):hover{
+.top-bar-section a:not(.inizia):not(#supporto):not(.dropdown-elements):not(#logo-home):hover{
     padding-bottom: 36px;
     border-bottom: 2px solid green;
     height: 38px;
