@@ -430,6 +430,9 @@ footer{
     margin-right: -4.5px;
     margin-bottom: -5px;
 }
+svg{
+    fill: white;
+}
 .logo1{
     background-color: #A2D39B;
 }
@@ -457,7 +460,7 @@ footer{
 
 
 
-.box-logo img{
+.box-logo svg{
     width: 70%;
     height: auto;
     display: block;
@@ -466,7 +469,7 @@ footer{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.designit-text  img{
+.designit-text  svg{
     width: 150px;
 }
 .designit-text hr{
