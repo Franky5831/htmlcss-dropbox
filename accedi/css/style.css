@@ -7,8 +7,7 @@
 html {
     scroll-behavior: smooth;
     min-width: 1300px;
-  }
-
+}
 
 /*header*/
 header{
@@ -28,7 +27,7 @@ header{
 }
 #scarica{
     position: relative;
-    top: -40px;
+    top: -50px;
     float: right;
 }
 header img{
