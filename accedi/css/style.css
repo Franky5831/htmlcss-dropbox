@@ -6,27 +6,171 @@
 }
 html {
     scroll-behavior: smooth;
+    min-width: 1300px;
   }
+
+
+/*header*/
+header{
+    margin-bottom: 150px;
+}
+#header-elements{
+    padding: 0 17%;
+}
+#prova{
+    border-radius: 3px;
+    border: 1px solid #0061FF;
+    color: #0061FF;
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+#scarica{
+    position: relative;
+    top: -40px;
+    float: right;
+}
+header img{
+    position: relative;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header hr{
+width: 100%;
+}
+/*fine header*/
+
+
+
+
+
+
+/*main*/
+main{
+    margin: 0 calc((100% - 1100px)/2);
+}
+a{
+    text-decoration: none;
+}
+.debugm{
+    background-color: rgba(241, 90, 34, 0);
+}
+main img{
+    display: inline-block;
+    width: 550px;
+    height: auto;
+    margin-right: 5%;
+}
+.box-access{
+    display: inline-block;
+    position: relative;
+    top: -85px;
+    width: 400px;
+    height: 550px;
+}
+#box-crea-account h2, #box-crea-account a{
+    margin-top: 12px;
+    font-size: 14px;
+}
+#box-crea-account h2{
+    padding-right: 6px;
+}
+.box-access h1, .box-access a{
+    display: inline-block;
+}
+.box-access #box-crea-account{
+    float: right;
+}
+.box-access #bottoni-accesso div{
+    text-align: center;
+    margin: 40px 0;
+}
+#bottoni-accesso div:first-child a{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: #0061FF;
+    color: white;
+}
+#bottoni-accesso div:last-child a{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    border: 1px solid rgb(68, 68, 68);
+    background-color: black;
+    color: white;
+}
+div i{
+    float: left;
+    margin-left: 10px;
+}
+.box-access h2{
+    display: inline-block;
+}
+.box-access h3{
+    text-align: center;
+}
+.box-access hr{
+    display: inline-block;
+}
+#accesso .testo input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+#accesso .testo{
+    margin-bottom: 20px;
+}
+#accesso #Ricordami{
+    display: inline-block;
+}
+#accesso #accedi{
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: #0061FF;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    float: right;
+}
+#accedi-div{
+    position: relative;
+    top: -30px;
+}
+#accesso>a{
+    padding-top: 30px;
+}
+a{
+    color: blue;
+}
+/*fine main*/
+
+
+
+
 
 
 
 
   
 /*footer*/
-/**/
+
 .debugf{
     background-color: transparent;
 }
 footer{
+    margin-top: 100px;
     width: 100%;
 }
 
 
 .black-footer{
+    border-top: 1px solid black;
     width: 100%;
     height: 580px;
-    background-color: black;
-    color: white;
+    color: black;
     padding-top: 120px;
 }
 
@@ -45,15 +189,9 @@ footer{
 }
 .opzioni-black-footer a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
-.italiano{
-    margin-left: calc((100% - 1200px)/5);
-}
-.italiano hr{
-    width: 130px;
-    margin-bottom: 50px;
-}
+
 
 
 /*fine footer*/
