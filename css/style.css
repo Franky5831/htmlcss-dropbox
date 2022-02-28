@@ -431,7 +431,7 @@ footer{
     margin-bottom: -5px;
 }
 svg{
-    fill: white;
+    filter: invert(1);
 }
 .logo1{
     background-color: #A2D39B;
