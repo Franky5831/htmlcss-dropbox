@@ -53,21 +53,21 @@ body{
     color: black;
     padding: 20px 0 40px 0;
 }
-.top-bar-section a:not(.inizia):not(#supporto):not(#dropdown ul li a):hover{
+.top-bar-section a:not(.inizia):not(#supporto):not(#dropdown-supporto ul li a):hover{
     padding-bottom: 36px;
     border-bottom: 2px solid green;
     height: 38px;
 }
-.top-bar-section #dropdown li{
+.top-bar-section #dropdown-supporto li{
     list-style: none;
     text-align: left;
     font-size: 20px;
     padding: 10px;
 }
-.top-bar-section #dropdown ul{
+.top-bar-section #dropdown-supporto ul{
     padding: 12px 22px;
 }
-.top-bar-section #dropdown{
+.top-bar-section #dropdown-supporto{
     width: 300px;
     height: 120px;
     background-color: #F2EEE8;
@@ -76,10 +76,10 @@ body{
     top: 80px;
     display: none;
 }
-#supporto:hover ~ #dropdown{
+#supporto:hover ~ #dropdown-supporto{
     display: inline;
 }
-#dropdown:hover{
+#dropdown-supporto:hover{
     display: inline;
 }
 
