@@ -12,6 +12,7 @@ html {
 /*header*/
 header{
     margin-bottom: 150px;
+    border-bottom: 1px solid black;
 }
 #header-elements{
     padding: 0 17%;
